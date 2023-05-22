@@ -10,7 +10,7 @@ if (isWordPalindrom(UserWord)){
 
 function isWordPalindrom(word){
     for (let i = 0; i < (word.length / 2 ) + 1 ; i = i + 1){
-        if ( word[i] === word[word.length - i]){
+        if ( word.charAt(i) === word.charAt(word.length - i)){
             console.log(' la lettera numero ' + i + ' ' + 'è uguale alla lettera numero ' + ' ' + (word.length - i));
             array.push(i);
             console.log(array);
@@ -29,3 +29,4 @@ function isWordPalindrom(word){
         return false;
     }
 }
+
