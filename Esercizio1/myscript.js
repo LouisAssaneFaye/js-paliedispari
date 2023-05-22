@@ -35,7 +35,7 @@ function isWordPalindrom(word){
             return false;
         }
     } else {
-        if (array.length === (word.length / 2 - 0.5)){
+        if (array.length === (word.length / 2 - 0.5 + 1)){
             console.log('la parola è palindroma');
             return true;
         } else {
